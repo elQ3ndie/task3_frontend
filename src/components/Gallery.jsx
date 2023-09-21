@@ -35,7 +35,10 @@ const Gallery = () => {
       return true;
     }
 
-    return item.tags.some((tag) => tag.includes(searchTerm));
+    // Convert both the search term and tags to lowercase for case-insensitive search
+    const lowercaseSearchTerm = searchTerm.toLowerCase();
+
+    return item.tags.some((tag) => tag.toLowerCase().includes(lowercaseSearchTerm));
   });
 
   const handleSearchChange = (e) => {
