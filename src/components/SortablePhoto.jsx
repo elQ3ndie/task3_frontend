@@ -1,7 +1,6 @@
 import React from 'react';
 import {useSortable} from '@dnd-kit/sortable';
 import {CSS} from '@dnd-kit/utilities';
-
 import {Photo} from './Photo';
 
 export const SortablePhoto = (props) => {
@@ -30,3 +29,5 @@ export const SortablePhoto = (props) => {
     />
   );
 };
+
+
